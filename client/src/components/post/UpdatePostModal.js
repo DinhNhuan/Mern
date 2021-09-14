@@ -62,9 +62,6 @@ const UpdatePostModal = () => {
                 value={title}
                 onChange={handleInputChange}
               />
-              <Form.Text id="title-help" muted>
-                Required
-              </Form.Text>
             </Form.Group>
             <Form.Group className="my-3">
               <Form.Control

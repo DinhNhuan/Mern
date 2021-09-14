@@ -53,7 +53,7 @@ const AddPostModal = () => {
         </Modal.Header>
         <Form onSubmit={onSubmit}>
           <Modal.Body>
-            <Form.Group>
+            <Form.Group className="my-3">
               <Form.Control
                 type="text"
                 placeholder="Title"
@@ -67,7 +67,8 @@ const AddPostModal = () => {
                 Required
               </Form.Text>
             </Form.Group>
-            <Form.Group>
+
+            <Form.Group className="my-3">
               <Form.Control
                 as="textarea"
                 row={3}
@@ -77,7 +78,8 @@ const AddPostModal = () => {
                 onChange={handleInputChange}
               />
             </Form.Group>
-            <Form.Group>
+
+            <Form.Group className="my-3">
               <Form.Control
                 type="text"
                 placeholder="Url tutorials"
@@ -87,6 +89,7 @@ const AddPostModal = () => {
               />
             </Form.Group>
           </Modal.Body>
+
           <Modal.Footer>
             <Button variant="danger" onClick={closeDialog}>
               Cancel

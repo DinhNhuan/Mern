@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
+
 const authRouter = require("./routes/auth");
 const postRouter = require("./routes/post");
-require("dotenv").config();
-const cors = require("cors");
 
 const DB_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@mern-learnit.k5dwv.mongodb.net/mern-learnit?retryWrites=true&w=majority`;
 
@@ -42,4 +43,4 @@ app.all("/", function (req, res, next) {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, (req, res) => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

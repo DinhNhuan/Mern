@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const argon2 = require("argon2");
-const User = require("../models/User");
+
 const jwt = require("jsonwebtoken");
 const verifyToken = require("../middleware/auth");
-require("dotenv");
+
+const User = require("../models/User");
 
 // @route GET api/auth
 // description Check if user is login in

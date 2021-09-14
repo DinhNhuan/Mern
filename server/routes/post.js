@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 require("dotenv");
-const Post = require("../models/post");
-
 const verifyToken = require("../middleware/auth");
+
+const Post = require("../models/Post");
 
 // @route POST api/post
 // @description create post

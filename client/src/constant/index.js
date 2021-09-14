@@ -3,8 +3,10 @@ export const SET_AUTH = "SET_AUTH";
 
 // url
 export const API_URL =
-  process.env.NODE_ENV !== "production" ? "http://localhost:5000/api" : "";
-
+  process.env.NODE_ENV !== "production"
+    ? "https://whispering-headland-64389.herokuapp.com/api"
+    : "";
+//   https://whispering-headland-64389.herokuapp.com
 // token
 export const LOCAL_STORAGE_TOKEN = "MERN";
 

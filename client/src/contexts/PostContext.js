@@ -78,7 +78,7 @@ const PostContextProvider = ({ children }) => {
         `${Enum.API_URL}/post/${updatedPost._id}`,
         updatedPost
       );
-      console.log(response);
+
       if (response.data.success) {
         dispatch({ type: Enum.UPDATE_POST, payload: response.data.post });
         return response.data;

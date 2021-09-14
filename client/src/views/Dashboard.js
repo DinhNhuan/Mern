@@ -97,7 +97,6 @@ const Dashboard = () => {
         onClose={() => setToast({ show: false, message: null, type: "" })}
         delay={3000}
         autohide={true}
-        animation={false}
       >
         <Toast.Body>
           <strong>{message}</strong>

@@ -47,7 +47,7 @@ const AddPostModal = () => {
 
   return (
     <>
-      <Modal show={showAddPostModal} animation={false} onHide={closeDialog}>
+      <Modal show={showAddPostModal} onHide={closeDialog}>
         <Modal.Header>
           <Modal.Title>What do yout want to learn?</Modal.Title>
         </Modal.Header>
